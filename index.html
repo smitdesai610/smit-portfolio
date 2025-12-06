@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smit Desai Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Smit Desai, a Frontend Web Developer specializing in React.js, UI/UX, and API Integration."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div class="glow-bg"></div>
+
+    <nav class="navbar">
+      <div class="logo">Smit Desai<span class="dot">.</span></div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button id="theme-toggle" aria-label="Toggle Dark Mode">
+            <i class="ph ph-moon"></i>
+          </button>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-content">
+        <p class="greeting">Hello, I'm</p>
+        <h1 class="hero-name">Smit Desai</h1>
+        <h2 class="hero-title">Frontend Web Developer</h2>
+        <p class="hero-tagline">
+          Building responsive, high-performance web applications with clean
+          architecture and modern UI frameworks.
+        </p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary">Hire Me</a>
+          <a
+            href="./assets/resume.pdf"
+            class="btn btn-outline"
+            download="Smit-Desai-Resume.pdf"
+            >Download CV <i class="ph ph-download-simple"></i
+          ></a>
+        </div>
+
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/smit-desai-4491182ab"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="ph ph-linkedin-logo"></i
+          ></a>
+          <a
+            href="https://github.com/smitdesai610"
+            target="_blank"
+            aria-label="GitHub"
+            ><i class="ph ph-github-logo"></i
+          ></a>
+          <a href="mailto:smitdesai4747@gmail.com" aria-label="Email"
+            ><i class="ph ph-envelope-simple"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="img-container">
+          <img
+            src="./assets/profile.jpg"
+            alt="Smit Desai Profile"
+            class="profile-img"
+          />
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a <strong>Frontend Web Developer</strong> with roughly 1.5
+              years of experience specializing in <strong>React.js</strong>,
+              modern UI frameworks, and API integration.
+            </p>
+            <p>
+              I have a proven ability to collaborate effectively with teams and
+              deliver user-friendly digital products, including social media
+              platforms and admin panels. I focus on building scalable web
+              applications with clean architecture and reusable components.
+            </p>
+            <div class="stats-container">
+              <div class="stat-card">
+                <h3>1.5+</h3>
+                <p>Years Exp.</p>
+              </div>
+              <div class="stat-card">
+                <h3>Surat</h3>
+                <p>Gujarat, India</p>
+              </div>
+              <div class="stat-card">
+                <h3>BCA</h3>
+                <p>IT Graduate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills-wrapper">
+          <h3 class="skill-category">Frontend & UI</h3>
+          <div class="skill-grid">
+            <div class="skill-badge"><i class="ph ph-file-html"></i> HTML5</div>
+            <div class="skill-badge"><i class="ph ph-file-css"></i> CSS3</div>
+            <div class="skill-badge"><i class="ph ph-code"></i> JavaScript</div>
+            <div class="skill-badge"><i class="ph ph-atom"></i> React.js</div>
+            <div class="skill-badge">
+              <i class="ph ph-paint-brush-broad"></i> SCSS
+            </div>
+            <div class="skill-badge">
+              <i class="ph ph-wind"></i> Tailwind CSS
+            </div>
+            <div class="skill-badge">
+              <i class="ph ph-layout"></i> MUI (Material UI)
+            </div>
+          </div>
+
+          <h3 class="skill-category">Core & Others</h3>
+          <div class="skill-grid">
+            <div class="skill-badge">
+              <i class="ph ph-plugs-connected"></i> API Integration
+            </div>
+            <div class="skill-badge">
+              <i class="ph ph-check-circle"></i> Quality Assurance
+            </div>
+            <div class="skill-badge"><i class="ph ph-bug"></i> Testing</div>
+            <div class="skill-badge">
+              <i class="ph ph-git-branch"></i> Git/Version Control
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">Nov 2024 - Present</div>
+            <div class="timeline-content">
+              <h3>Web Developer</h3>
+              <h4>Tepnot Technologies Private Limited</h4>
+              <p class="location">India</p>
+              <ul class="job-details">
+                <li>
+                  Contributed to Tepnot Application (Social Media App) and its
+                  Admin Panel.
+                </li>
+                <li>
+                  Built interactive UI screens, forms, and dashboards using
+                  React.js.
+                </li>
+                <li>
+                  Integrated REST APIs and improved application usability.
+                </li>
+                <li>
+                  Ensured consistent UI/UX across mobile and web platforms.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">June 2024 - Nov 2024</div>
+            <div class="timeline-content">
+              <h3>Frontend Web Developer</h3>
+              <h4>DioneApps Private Limited</h4>
+              <p class="location">Surat, Gujarat, India</p>
+              <ul class="job-details">
+                <li>
+                  Developed and maintained the Pikabox Admin Panel with scalable
+                  React.js architecture.
+                </li>
+                <li>
+                  Implemented user management, content controls, and dashboard
+                  analytics.
+                </li>
+                <li>
+                  Integrated APIs for Live TV channels and cloud storage
+                  features with optimized performance.
+                </li>
+                <li>
+                  Improved overall UI/UX ensuring fast loading and easy control
+                  for administrators.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Tepnot Admin Panel</h3>
+              <div class="project-links">
+                <a href="#" aria-label="Live Demo"
+                  ><i class="ph ph-arrow-square-out"></i
+                ></a>
+              </div>
+            </div>
+            <p class="project-desc">
+              A comprehensive admin panel for the Tepnot Social Media App.
+              Included dashboard analytics, user management forms, and REST API
+              integration for real-time data updates.
+            </p>
+            <div class="tech-stack">
+              <span>React.js</span>
+              <span>REST API</span>
+              <span>Dashboard</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Pikabox Admin Panel</h3>
+              <div class="project-links">
+                <a href="#" aria-label="Live Demo"
+                  ><i class="ph ph-arrow-square-out"></i
+                ></a>
+              </div>
+            </div>
+            <p class="project-desc">
+              Admin interface for Pikabox (Cloud Space & Live TV). Features
+              include content control for TV channels, cloud storage management,
+              and performance monitoring.
+            </p>
+            <div class="tech-stack">
+              <span>React.js</span>
+              <span>Cloud APIs</span>
+              <span>User Mgmt</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Portfolio Website</h3>
+              <div class="project-links">
+                <a href="#" aria-label="View Code"
+                  ><i class="ph ph-github-logo"></i
+                ></a>
+              </div>
+            </div>
+            <p class="project-desc">
+              A fully responsive, modern personal portfolio website featuring
+              dark mode, glassmorphism UI, and smooth animations without
+              external frameworks.
+            </p>
+            <div class="tech-stack">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-card">
+          <div class="edu-details">
+            <h3>BCA, Information Technology</h3>
+            <h4>Veer Narmad South Gujarat University (VNSGU)</h4>
+            <p>Surat, Gujarat</p>
+          </div>
+          <div class="edu-date">
+            <span>Sep 2021 - Mar 2024</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <p>
+              I am currently available for freelance work or full-time
+              opportunities. Drop me a message!
+            </p>
+
+            <div class="contact-item">
+              <i class="ph ph-envelope-simple"></i>
+              <a href="mailto:smitdesai4747@gmail.com"
+                >smitdesai4747@gmail.com</a
+              >
+            </div>
+            <div class="contact-item">
+              <i class="ph ph-phone"></i>
+              <a href="tel:+919510556938">+91 95105 56938</a>
+            </div>
+            <div class="contact-item">
+              <i class="ph ph-map-pin"></i>
+              <span>Surat, Gujarat, India</span>
+            </div>
+          </div>
+
+          <form
+            class="contact-form"
+            action="mailto:smitdesai4747@gmail.com"
+            method="POST"
+            enctype="text/plain"
+            id="contactForm"
+          >
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="Name"
+                required
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="Email"
+                required
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="Message"
+                rows="5"
+                required
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Smit Desai. All rights reserved.</p>
+        <div class="footer-socials">
+          <a
+            href="https://www.linkedin.com/in/smit-desai-4491182ab"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="mailto:smitdesai4747@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
