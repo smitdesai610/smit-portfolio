@@ -69,20 +69,21 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // --- 4. CONTACT FORM SUBMISSION (Frontend Only) ---
+ emailjs.init("v4mbarDBgfzTOPFyt");
   const form = document.getElementById("contactForm");
-  form.addEventListener("submit", (e) => {
+  form.addEventListener("submit", function (e) {
     e.preventDefault();
-    const btn = form.querySelector("button");
-    const originalText = btn.innerText;
-
-    btn.innerText = "Sent!";
-    btn.style.backgroundColor = "#10b981"; // Green color
-
-    setTimeout(() => {
-      form.reset();
-      btn.innerText = originalText;
-      btn.style.backgroundColor = "";
-      alert("Message simulated! (Integrate backend to send real emails)");
-    }, 2000);
+    console.log([...new FormData(this)]);
+    emailjs
+      .sendForm("service_cuqa7r4", "template_e3kvi98", this)
+      .then(() => {
+        alert("Message sent successfully :white_tick:");
+        form.reset();
+      })
+      .catch((error) => {
+        console.error("EmailJS Error:", error);
+        alert("Failed to send message :x:");
+      });
   });
 });
+
